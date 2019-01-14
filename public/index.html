@@ -2,21 +2,34 @@
 <html>
   <head>
     <title>CSS/HTML Workshop with Privateaser</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div id="bar">
-      <input class="js-name" type="text" placeholder="Bar name"/>
-      <input class="js-price-by-hour" type="number" placeholder="Price by hour"/>
-      <input class="js-price-by-person" type="number" placeholder="Price by person"/>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Privateaser</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
     </div>
-    <div id="booker">
-      <input class="js-name" type="text" placeholder="Booker name"/>
-      <input class="js-time" type="number" placeholder="Time in h"/>
-      <input class="js-persons" type="number" placeholder="Persons"/>
-      <input class="js-option" type="checkbox" placeholder="Deductible option"/>
-    </div>
-    <button id="compute">Compute</button>
-    <div id="actors"></div>
+    <form class="container">
+      <fieldset id="bar" class="form-group">
+        <legend>Bar</legend>
+        <input class="js-name" type="text" placeholder="Bar name"/>
+        <input class="js-price-by-hour" type="number" placeholder="Price by hour"/>
+        <input class="js-price-by-person" type="number" placeholder="Price by person"/>
+      </fieldset>
+      <fieldset id="booker" class="form-group">
+        <legend>Booker</legend>
+        <input class="js-name" type="text" placeholder="Booker name"/>
+        <input class="js-time" type="number" placeholder="Time in h"/>
+        <input class="js-persons" type="number" placeholder="Persons"/>
+        <input class="js-option" type="checkbox" placeholder="Deductible option"/>
+      </fieldset>
+      <div>
+      <button id="compute" type="button" class="btn btn-primary">Compute</button></div>
+      <div id="actors"></div>
+    </form >
     <script src="privateaser.js"></script>
     <script src="index.js"></script>
   </body>
